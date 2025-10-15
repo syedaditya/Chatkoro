@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+header('Access-control-allow-orgin: http://127.0.0.1:5500')
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chatkoro</title>
+    <link rel="stylesheet" href="../css/page1.css">
+    <script defer src="http://localhost:8000/socket.io/socket.io.js"></script>
+    <script defer src="../js/client.js"></script>
+</head>
+<body>
+    <nav> <h1>CHAT KORO</h1></nav>
+    <div class="container">
+        <div class="message right">Adi: kire madarchod</div>
+        <div class="message left">tahsin: chicken naki?</div> 
+    </div>
+    <div class="send">
+        <form action="#" id="send-container">
+            <input type="text" name = "messageInp" id = "message-input">
+            <button id="send-button" type="submit">SEND</button>
+
+        </form>
+    </div>
+</body>
+</html>
